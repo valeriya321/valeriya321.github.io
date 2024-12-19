@@ -1,0 +1,90 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+.one-block {
+  text-align: center;
+}
+
+.four-block {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: gray; /* Сірий фон для таблиці */
+}
+
+.four-block th,
+.four-block td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Наступний блок після таблиці */
+.four-block + div {
+  background-color: gray; /* Сірий фон для блоку після таблиці */
+}
+
+.footer {
+  margin-top: 30px;
+  font-style: oblique;
+  text-align: center;
+}
+
+/* 1. Бордюр для всіх блоків */
+div {
+  border: 3px solid pink;
+}
+
+/* 2. Зовнішній відступ у блоків */
+div {
+  margin: 5px;
+}
+
+/* 3. Фон всіх блоків голубий */
+div {
+  background-color: lightblue;
+}
+
+/* 4. Фон зовнішнього блоку жовтий за допомогою id-селектора */
+#outer-block {
+  background-color: yellow; /* Жовтий фон для зовнішнього блоку */
+}
+/* 1. Фон блоків 2, 3, 4 сірий через селектор класу */
+.two-block,
+.thre-block,
+.thre-block {
+  background-color: gray; /* Сірий фон */
+  padding: 5px; /* Внутрішній відступ */
+}
+
+/* 2. Ширина блоків 2, 3, 4 */
+.two-block {
+  width: 20%; /* Ширина блоку 2 */
+  float: left; /* Вирівнювання в ряд */
+}
+
+.thre-block {
+  width: 50%; /* Ширина блоку 3 */
+  float: left; /* Вирівнювання в ряд */
+}
+
+.four-block {
+  width: 20%; /* Ширина блоку 4 */
+  float: left; /* Вирівнювання в ряд */
+}
+
+/* 3. Очищення після float */
+.clearfix {
+  clear: both;
+}
